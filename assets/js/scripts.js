@@ -142,12 +142,16 @@ jQuery(document).ready(function ($) {
   $('#backtoblog a').text('← Go back')
 
   /**
-   * Change register button link
+   * Change register and lost password links
    */
-  $('#nav a:first').attr('href', `/register/?redirect_to=${GET.redirect_to}`)
+  ;
+  (() => {
+    let links = {
+      'Register': `/register/?redirect_to=${GET.redirect_to}`,
+      'Log in': `/login/?redirect_to=${GET.redirect_to}`,
+      'Lost your password?': `/login/?action=lostpassword&redirect_to=${GET.redirect_to}`
+    }
 
-  /**
-   * Change Lost password link
-   */
-  $('#nav a:last').attr('href', `${$('#nav a:last').attr('href')}&redirect_to=${GET.redirect_to}`)
+    document.querySelectorAll('#nav a').forEach(el => el.href = links[el.text])
+  })()
 });
