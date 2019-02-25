@@ -43,10 +43,12 @@ jQuery(document).ready(function ($) {
       /**
        * Appends input to parent
        */
-      $(this)
-        .parent()
-        .parent()
-        .append($(this));
+      if (!$('.login-action-rp').length) { // Not in reset password page
+        $(this)
+          .parent()
+          .parent()
+          .append($(this));
+      }
 
       /**
        * Removes label
@@ -59,10 +61,12 @@ jQuery(document).ready(function ($) {
       /**
        * Replace <p /> with <div />
        */
-      $(this)
-        .parent()
-        .addClass('divi-login__input')
-        .replaceWith('<div class="divi-login__input">' + $(this).parent().html() + '</div>');
+      if (!$('.login-action-rp').length) { // Not in reset password page
+        $(this)
+          .parent()
+          .addClass('divi-login__input')
+          .replaceWith('<div class="divi-login__input">' + $(this).parent().html() + '</div>');
+      }
 
       /**
        * Adds class to login form
