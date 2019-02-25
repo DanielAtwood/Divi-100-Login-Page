@@ -145,4 +145,9 @@ jQuery(document).ready(function ($) {
    * Change register button link
    */
   $('#nav a:first').attr('href', `/register/?redirect_to=${GET.redirect_to}`)
+
+  /**
+   * Change Lost password link
+   */
+  $('#nav a:last').attr('href', `${$('#nav a:last').attr('href')}&redirect_to=${GET.redirect_to}`)
 });
