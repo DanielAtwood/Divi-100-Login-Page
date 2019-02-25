@@ -138,7 +138,7 @@ jQuery(document).ready(function ($) {
   })
   Object.freeze(GET)
 
-  $('#backtoblog a').attr('href', GET.redirect_to)
+  $('#backtoblog a').attr('href', GET.redirect_to || '/')
   $('#backtoblog a').text('← Go back')
 
   /**
@@ -146,10 +146,11 @@ jQuery(document).ready(function ($) {
    */
   ;
   (() => {
+    const redirect_to = GET.redirect_to || '/'
     let links = {
-      'Register': `/register/?redirect_to=${GET.redirect_to}`,
-      'Log in': `/login/?redirect_to=${GET.redirect_to}`,
-      'Lost your password?': `/login/?action=lostpassword&redirect_to=${GET.redirect_to}`
+      'Register': `/register/?redirect_to=${redirect_to}`,
+      'Log in': `/login/?redirect_to=${redirect_to}`,
+      'Lost your password?': `/login/?action=lostpassword&redirect_to=${redirect_to}`
     }
 
     document.querySelectorAll('#nav a').forEach(el => el.href = links[el.text])
