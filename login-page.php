@@ -388,7 +388,7 @@ class ET_Divi_100_Custom_Login_Page {
 			$css .= sprintf(
 				'#login h1 a {
 					background: url( "%s" ) center center no-repeat !important;
-					background-size: cover !important;
+					background-size: contain !important;
 					background-position: center center !important;
 				}',
 				esc_url( $logo_image_src )
