@@ -127,4 +127,17 @@ jQuery(document).ready(function ($) {
    * Focuses first input
    */
   $('input:first').focus()
+
+  /**
+   * Change back button link & text
+   */
+  const GET = {}
+  location.search.slice(1).split('&').forEach(s => {
+    q = s.split('=')
+    GET[q[0]] = decodeURIComponent(q[1])
+  })
+  Object.freeze(GET)
+
+  $('#backtoblog a').attr('href', GET.redirect_to)
+  $('#backtoblog a').text('← Go back')
 });
