@@ -140,4 +140,9 @@ jQuery(document).ready(function ($) {
 
   $('#backtoblog a').attr('href', GET.redirect_to)
   $('#backtoblog a').text('← Go back')
+
+  /**
+   * Change register button link
+   */
+  $('#nav a:first').attr('href', `/register/?redirect_to=${GET.redirect_to}`)
 });
