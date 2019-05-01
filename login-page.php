@@ -7,10 +7,10 @@
 
 /*
 * Plugin Name: Divi 100 Login Page
-* Plugin URI: https://elegantthemes.com/
+* Plugin URI: https://github.com/DanielAtwood/Divi-100-Login-Page
 * Description: This plugin gives you the option to customize your login screen
-* Author: Elegant Themes
-* Version: 0.0.1
+* Author: Elegant Themes | Daniel Atwood
+* Version: 0.1.0
 * Author URI: http://elegantthemes.com
 * License: GPL3
 */
