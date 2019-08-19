@@ -35,6 +35,10 @@
   box-sizing: border-box;
 }
 
+#login_error:empty {
+  display: none;
+}
+
 .et_divi_100_custom_login_page--style-1 div#login,
 .et_divi_100_custom_login_page--style-2 div#login,
 .et_divi_100_custom_login_page--style-3 div#login,
@@ -86,7 +90,8 @@
   font-weight: 600;
 }
 
-.et_divi_100_custom_login_page--style-1 p#backtoblog a:focus, .et_divi_100_custom_login_page--style-1 p#backtoblog a:hover,
+.et_divi_100_custom_login_page--style-1 p#backtoblog a:focus,
+.et_divi_100_custom_login_page--style-1 p#backtoblog a:hover,
 .et_divi_100_custom_login_page--style-2 p#backtoblog a:focus,
 .et_divi_100_custom_login_page--style-2 p#backtoblog a:hover,
 .et_divi_100_custom_login_page--style-3 p#backtoblog a:focus,
@@ -139,7 +144,7 @@
   color: inherit;
   font-size: 24px;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   pointer-events: none;
 }
 
@@ -184,7 +189,7 @@
 .et_divi_100_custom_login_page--style-7 .divi-login__submit input:active {
   margin: 0;
   -webkit-transform: scale(0.99);
-          transform: scale(0.99);
+  transform: scale(0.99);
 }
 
 .et_divi_100_custom_login_page--style-1 .divi-login__remember,
@@ -257,7 +262,7 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .et_divi_100_custom_login_page--style-1 .divi-login__input {
@@ -313,7 +318,7 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .et_divi_100_custom_login_page--style-2 .divi-login__input {
@@ -350,8 +355,8 @@
 
 .et_divi_100_custom_login_page--style-2 .divi-login__remember {
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
   margin-bottom: 20px !important;
 }
 
@@ -364,7 +369,7 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .et_divi_100_custom_login_page--style-3 .divi-login__input {
@@ -413,7 +418,7 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .et_divi_100_custom_login_page--style-4 .divi-login__input {
@@ -479,7 +484,7 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   background: #FFF;
   padding: 90px;
 }
@@ -553,7 +558,7 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   background: #FFF;
   padding: 90px 0 0;
 }
@@ -613,7 +618,7 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .et_divi_100_custom_login_page--style-7 .divi-login__input {
@@ -633,7 +638,7 @@
 .et_divi_100_custom_login_page--style-7 .divi-login__submit {
   display: block;
   -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  flex-basis: 50%;
 }
 
 .et_divi_100_custom_login_page--style-7 .divi-login__submit input.button {
@@ -657,13 +662,13 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  flex-basis: 50%;
   margin-bottom: 0 !important;
 }
